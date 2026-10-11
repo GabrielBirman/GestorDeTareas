@@ -1,23 +1,38 @@
-﻿# GestorDeTareas
-Gestor de Tareas en Java
+# Gestor de Tareas ☕
 
-Mini proyecto en Java con funcionalidades CRUD para gestionar tareas desde consola.
+Aplicación de consola en Java para administrar una lista de tareas (CRUD), organizada en capas: modelo, servicio y vista.
 
-#Funcionalidades
-- Agregar tarea
-- Listar tareas
-- Actualizar estado (completada o no)
-- Eliminar tarea
+## Funcionalidades
 
-Tecnologías
+- Agregar tareas, con validación de nulos y de duplicados
+- Listar las tareas con su estado
+- Marcar una tarea como completada o pendiente
+- Eliminar tareas
+- Guardar la lista en un archivo de texto (`tareas.txt`)
+
+## Tecnologías
+
 - Java
+- Programación orientada a objetos
 - Git
 
- Cómo usar
-- Clonar el repo
-- Compilar y ejecutar Main.java
-- Probar las operaciones desde consola
+## Estructura
 
-Posibles mejoras
-- Persistencia en archivo .txt o .json
-- Interfaz gráfica con Swing o JavaFX
+```
+src/Gestor/
+├── models/     # Tarea: título, descripción y estado
+├── services/   # GestorTareas: lógica del CRUD y guardado en archivo
+└── views/      # Main: punto de entrada
+```
+
+## Cómo usarlo
+
+1. Clonar el repositorio.
+2. Abrir la carpeta `_GestorDeTareas_` en Eclipse o IntelliJ.
+3. Ejecutar `Gestor.views.Main`.
+
+## Próximas mejoras
+
+- Menú interactivo para cargar tareas desde la consola
+- Guardar y leer las tareas en formato JSON
+- Interfaz gráfica con JavaFX
